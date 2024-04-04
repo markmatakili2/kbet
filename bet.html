@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Betting Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Logo</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Wallet</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <table class="games-table">
+      <thead>
+        <tr>
+          <th>Game</th>
+          <th>Home</th>
+          <th>Draw</th>
+          <th>Away</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Team A vs Team B</td>
+          <td><button class="option" data-option="1">1</button></td>
+          <td><button class="option" data-option="x">X</button></td>
+          <td><button class="option" data-option="2">2</button></td>
+        </tr>
+        <!-- Add more game rows here -->
+      </tbody>
+      <br>
+      <br>
+    </table>
+    <form id="bet-form">
+      <label for="bet-amount">Enter Bet Amount:</label>
+      <input type="text" id="bet-amount" name="bet-amount">
+      <button type="submit">Place Bet</button>
+    </form>
+    <table id="active-bets">
+      <thead>
+        <tr>
+          <th>Game</th>
+          <th>Bet Amount</th>
+          <th>Expected Winning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Active bets will be dynamically added here -->
+      </tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>`
+</html>
