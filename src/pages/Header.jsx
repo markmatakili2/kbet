@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div className="fixed top-0 flex flex-row justify-between shadow-md items-center w-[100%] bg-[white] px-[10px] py-[15px]">
         <div className="">
-            <h1 className='text-[25px] font-[500] '>Logo</h1>
+            <h1 className='text-[25px] font-[500] '></h1>
         </div>
         <div className="flex flex-row justify-center gap-[50px] items-center mr-[30px]">
             {links.map((link, index) => (
